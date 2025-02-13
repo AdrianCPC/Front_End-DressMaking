@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Dressmaking - Clientes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clientes</h1>
+        <a href="formularioCliente.html" class="btn btn-success mb-3">Registrar Nuevo Cliente</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">Nombre</th>
+                    <th class="text-center">Dirección</th>
+                    <th class="text-center">Teléfono</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Editar</th>
+                    <th class="text-center">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaClientes">
+                </tbody>
+        </table>
+        <button id="paginaAnteriorClientes" class="btn btn-primary">Anterior</button>
+        <button id="paginaSiguienteClientes" class="btn btn-primary">Siguiente</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/scriptClientes.js"></script>
+    </body>
+</html>
