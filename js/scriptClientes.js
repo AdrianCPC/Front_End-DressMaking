@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <td class="text-center">${cliente.nombre}</td>
                         <td class="text-center">${cliente.direccion}</td>
                         <td class="text-center">${cliente.telefono}</td>
-                        <td class="text-center">${cliente.email}</td>
-                        <td><button id="editarClienteBtn" value=${cliente.idCliente} class="btn btn-warning">Editar</button></td>
+                        <td class="text-center">${cliente.email}</td><td><a href="editarCliente.html?id=${cliente.idCliente}" class="btn btn-warning">Editar</a></td>
                         <td><button id="borrarClienteBtn" value=${cliente.idCliente} class="btn btn-danger">Eliminar</button></td>
                     `;
                     tablaClientes.appendChild(row);
@@ -63,9 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         console.error("Error al eliminar cliente:", error)
                     );
             }
-        } else if (event.target.id === "editarClienteBtn") {
-            // Redirigir a la página de edición de clientes con el ID del cliente
-            window.location.href = `editarCliente.html?id=${event.target.value}`;
         }
     });
 });

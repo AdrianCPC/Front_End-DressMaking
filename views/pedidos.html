@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Dressmaking - Pedidos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedidos</h1>
+        <a href="formularioPedido.html" class="btn btn-success mb-3">Registrar Nuevo Pedido</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">Fecha</th>
+                    <th class="text-center">Estado</th>
+                    <th class="text-center">Cantidad</th>
+                    <th class="text-center">Total</th>
+                    <th class="text-center">Cliente ID</th>
+                    <th class="text-center">Editar</th>
+                    <th class="text-center">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaPedidos">
+                </tbody>
+        </table>
+        <button id="paginaAnteriorPedidos" class="btn btn-primary">Anterior</button>
+        <button id="paginaSiguientePedidos" class="btn btn-primary">Siguiente</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/scriptPedidos.js"></script>
+    </body>
+</html>
