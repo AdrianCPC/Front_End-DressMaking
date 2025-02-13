@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Dressmaking - Materiales</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Materiales</h1>
+        <a href="formularioMaterial.html" class="btn btn-success mb-3">Registrar Nuevo Material</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">Nombre</th>
+                    <th class="text-center">Tipo</th>
+                    <th class="text-center">Cantidad Disponible</th>
+                    <th class="text-center">Precio Unitario</th>
+                    <th class="text-center">Editar</th>
+                    <th class="text-center">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaMateriales">
+                </tbody>
+        </table>
+        <button id="paginaAnteriorMateriales" class="btn btn-primary">Anterior</button>
+        <button id="paginaSiguienteMateriales" class="btn btn-primary">Siguiente</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/scriptMateriales.js"></script>
+    </body>
+</html>
