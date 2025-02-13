@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Dressmaking - Reportes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reportes</h1>
+        <a href="formularioReporte.html" class="btn btn-success mb-3">Registrar Nuevo Reporte</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">ID Reporte</th>
+                    <th class="text-center">Tipo</th>
+                    <th class="text-center">Fecha Generación</th>
+                    <th class="text-center">Contenido</th>
+                    <!--<th class="text-center">ID Usuario</th>-->
+                    <th class="text-center">Editar</th>
+                    <th class="text-center">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaReportes">
+                </tbody>
+        </table>
+        <button id="paginaAnteriorReportes" class="btn btn-primary">Anterior</button>
+        <button id="paginaSiguienteReportes" class="btn btn-primary">Siguiente</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/scriptReportes.js"></script>
+    </body>
+</html>
