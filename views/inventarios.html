@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Dressmaking - Inventarios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inventarios</h1>
+        <a href="formularioInventario.html" class="btn btn-success mb-3">Registrar Nuevo Inventario</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">ID Inventario</th>
+                    <th class="text-center">ID Material</th>
+                    <th class="text-center">Cantidad</th>
+                    <th class="text-center">Editar</th>
+                    <th class="text-center">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaInventarios">
+                </tbody>
+        </table>
+        <button id="paginaAnteriorInventarios" class="btn btn-primary">Anterior</button>
+        <button id="paginaSiguienteInventarios" class="btn btn-primary">Siguiente</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/scriptInventarios.js"></script>
+    </body>
+</html>
