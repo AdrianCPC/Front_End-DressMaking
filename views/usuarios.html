@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Dressmaking - Panel de Control</title>
+    <title>App Dressmaking</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">App Dressmaking</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,34 +36,27 @@
             </ul>
         </div>
     </nav>
-
-    <div class="container mt-4 text-center">
-        <h2>Panel de Control de App Dressmaking</h2>
-        <p class="lead">Selecciona una opción del menú para gestionar la información.</p>
-
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <a href="usuarios.html" class="btn btn-primary btn-lg btn-block">Gestionar Usuarios</a>
-            </div>
-            <div class="col-md-4">
-                <a href="clientes.html" class="btn btn-success btn-lg btn-block">Gestionar Clientes</a>
-            </div>
-            <div class="col-md-4">
-                <a href="materiales.html" class="btn btn-info btn-lg btn-block">Gestionar Materiales</a>
-            </div>
-            <div class="col-md-4 mt-3">
-                <a href="pedidos.html" class="btn btn-warning btn-lg btn-block">Gestionar Pedidos</a>
-            </div>
-            <div class="col-md-4 mt-3">
-                <a href="inventarios.html" class="btn btn-danger btn-lg btn-block">Gestionar Inventarios</a>
-            </div>
-            <div class="col-md-4 mt-3">
-                <a href="reportes.html" class="btn btn-secondary btn-lg btn-block">Gestionar Reportes</a>
-            </div>
-        </div>
+    <div class="container">
+        <h1>Usuarios</h1>
+        <a href="registrar.html" class="btn btn-success mb-3">Registrar Nuevo Usuario</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">Nombre</th>
+                    <th class="text-center">Tipo</th>
+                    <th class="text-center">Fecha Ingreso</th>
+                    <th class="text-center">Editar</th>
+                    <th class="text-center">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+                </tbody>
+        </table>
+        <button id="paginaAnterior" class="btn btn-primary">Anterior</button>
+        <button id="paginaSiguiente" class="btn btn-primary">Siguiente</button>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

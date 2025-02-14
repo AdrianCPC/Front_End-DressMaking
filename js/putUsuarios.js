@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => {
                 if (response.ok) {
                     console.log("Datos actualizados correctamente");
-                    window.location.href = "index.html"; // Redirigir a la página principal
+                    window.location.href = "usuarios.html"; // Redirigir a la página principal
                 } else {
                     console.error("Error al enviar la solicitud:", response.status);
                 }

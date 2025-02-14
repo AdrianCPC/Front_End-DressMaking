@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .then(responseData => {
                 console.log("Datos enviados correctamente. ID:", responseData);
-                window.location.href = "index.html"; // Redirigir a la página principal
+                window.location.href = "usuarios.html"; // Redirigir a la página principal
             })
             .catch(error => {
                 console.error("Error al enviar la solicitud:", error);
