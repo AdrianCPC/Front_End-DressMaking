@@ -4,18 +4,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const id = urlParams.get("id");
 
     const nombre = document.getElementById("nombre");
-    const telefono = document.getElementById("telefono");
-    const correo = document.getElementById("correo");
-    const ciudad = document.getElementById("ciudad");
+    const tipo = document.getElementById("tipo");
+    //const telefono = document.getElementById("telefono");
+    //const correo = document.getElementById("correo");
+    //const ciudad = document.getElementById("ciudad");
     const fecha = document.getElementById("fecha");
 
     fetch(`https://localhost:44338/api/usuario/${id}`) // URL con el ID
         .then(response => response.json())
         .then(user => { // Recibir un solo objeto Usuario
             nombre.value = user.nombreUsuario; // Usar propiedades del modelo Usuario
-            telefono.value = user.telefono;
-            correo.value = user.email;
-            ciudad.value = user.ciudad;
+            tipo.value = user.tipoUsuario;
+            //telefono.value = user.telefono;
+            //correo.value = user.email;
+            //ciudad.value = user.ciudad;
             fecha.value = user.FechaIngreso.substring(0, 10); // Formato AAAA-MM-DD
         })
         .catch(error => console.error("Error al obtener datos de la API:", error));
@@ -24,9 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = {
             idUsuario: parseInt(id), // Incluir el ID y convertirlo a entero
             nombreUsuario: nombre.value, // Usar propiedades del modelo Usuario
-            telefono: telefono.value,
-            email: correo.value,
-            ciudad: ciudad.value,
+            tipoUsuario: tipo.value,
+            //telefono: telefono.value,
+            //email: correo.value,
+            //ciudad: ciudad.value,
             FechaIngreso: fecha.value // Usar propiedades del modelo Usuario
         };
 

@@ -3,16 +3,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     registrar.addEventListener("click", (e) => {
         const nombre = document.getElementById("nombre").value;
-        const telefono = document.getElementById("telefono").value;
-        const correo = document.getElementById("correo").value;
-        const ciudad = document.getElementById("ciudad").value;
+        const tipo = document.getElementById("tipo").value;
+        //const telefono = document.getElementById("telefono").value;
+        //const correo = document.getElementById("correo").value;
+        //const ciudad = document.getElementById("ciudad").value;
         const fecha = document.getElementById("fecha").value;
 
         const data = {
             nombreUsuario: nombre,
-            telefono: telefono,
-            email: correo,
-            ciudad: ciudad,
+            tipoUsuario: tipo,
+            //telefono: telefono,
+            //email: correo,
+            //ciudad: ciudad,
             FechaIngreso: fecha
         };
 
